@@ -1,18 +1,25 @@
-# 🚀 VPN All-in-One Installer
-**SSH WebSocket + V2Ray + UDP Tunnel**
+# 🚀 VPN All-in-One Ultimate — SSH WS + V2Ray + UDP + SlowDNS
 
-## ✅ Fitur
-- ✅ SSH Dropbear dengan WebSocket (port 80/443)
-- ✅ V2Ray VMess over WebSocket + TLS
-- ✅ UDP Tunnel (port 40000–40100)
-- ✅ Auto SSL & HAProxy
-- ✅ Support Ubuntu 22.04 / 24.04 LTS
+**Domain:** `tunel.randi.biz.id`
+**Support:** Ubuntu 22.04 / 24.04 LTS
+**RAM Minimal:** 512MB | **CPU:** 1 Core
 
-## 🌐 Domain
-`tunel.randi.biz.id`
+## ✅ Fitur Lengkap
 
-## 📥 Cara Install
+| Layanan | Protokol | Port | Status |
+|---|---|---|---|
+| 🔑 SSH WebSocket | Dropbear + HAProxy | 80 / 443 | ✅ |
+| 📡 V2Ray VMess | WebSocket + TLS | 443 | ✅ |
+| 🔵 UDP Tunnel | Python UDP Relay | 40000–40100 | ✅ |
+| 🟢 SlowDNS Server | DNS Tunnel | 53 / 5353 | ✅ |
+
+## 📥 Cara Install di VPS
+
 ```bash
-wget -q https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/install.sh
+# Login sebagai root
+sudo su
+
+# Download & jalankan installer
+wget -q https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/install.sh -O install.sh
 chmod +x install.sh
 ./install.sh
